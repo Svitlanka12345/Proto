@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="signin.css" rel="stylesheet" />
+    <link href="src/style.css" rel="stylesheet" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -14,7 +14,19 @@
     />
   </head>
   <body>
-    <div class="container">
+    <header style="margin: 0 60px; padding: 10px 0">
+      <button type="submit" class="btn btn-secondary">
+        <a href="first.html" style="text-decoration: none; color: white"
+          >User profile</a
+        >
+      </button>
+      <button type="submit" class="btn btn-secondary">
+        <a href="third.html" style="text-decoration: none; color: white"
+          >Roles and Functions page</a
+        >
+      </button>
+    </header>
+    <div class="container" style="padding: 10px 0">
       <div class="row">
         <div class="col">
           <div class="card" id="measurement-point" style="width: 18rem">
@@ -791,7 +803,7 @@
             </div>
             <div class="input-group input-group-sm mb-3">
               <span class="input-group-text" id="inputGroup-sizing-sm"
-                >Deadine
+                >Deadline
               </span>
               <input
                 type="text"
@@ -865,5 +877,19 @@
         </div>
       </div>
     </div>
+    <footer style="margin: 0 60px; padding: 10px 0">
+      <button type="submit" class="btn btn-secondary">
+        <a href="first.html" style="text-decoration: none; color: white"
+          >User profile</a
+        >
+      </button>
+      <button type="submit" class="btn btn-secondary">
+        <a href="third.html" style="text-decoration: none; color: white"
+          >Roles and Functions page</a
+        >
+      </button>
+    </footer>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">To top</button>
+    <script src="src/script.js"></script>
   </body>
 </html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="src/style.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <header style="margin: 0 60px; padding: 10px 0">
+      <button type="submit" class="btn btn-secondary">
+        <a href="first.html" style="text-decoration: none; color: white"
+          >User profile</a
+        >
+      </button>
+      <button type="submit" class="btn btn-secondary">
+        <a href="second.html" style="text-decoration: none; color: white"
+          >Cards page</a
+        >
+      </button>
+    </header>
+
+    <div class="container" style="padding: 10px 0; font-size: 14px">
+      <div class="container-roles" id="role-table">
+        <table class="table table-hover table-bordered">
+          <thead>
+            <tr>
+              <th scope="col">№</th>
+              <th scope="col">Role</th>
+              <th scope="col">Functions</th>
+              <th scope="col">
+                DB items
+                <div>(to use)</div>
+              </th>
+              <th scope="col">
+                DV items
+                <div>(to create)</div>
+              </th>
+              <th scope="col">Quantity of active users</th>
+              <th scope="col">IDs of users</th>
+              <th scope="col">
+                Last added
+                <div>(date and ID)</div>
+              </th>
+              <th scope="col">
+                Last changed
+                <div>(date and ID)</div>
+              </th>
+              <th scope="col">Reason of changes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row" id="administrator">1</th>
+              <td id="role">Administrator DB</td>
+              <td id="functions">
+                <ul class="list-unstyled">
+                  <li>1. Add users by roles.</li>
+                  <li>2. Search information by IDs.</li>
+                  <li>3. Change user's information.</li>
+                  <li>4. Delete users.</li>
+                  <li>5. Support the system in the whole.</li>
+                </ul>
+              </td>
+              <td id="toUse">
+                <ul class="list-unstyled">
+                  <li>ID(sampler)</li>
+                  <li>ID(analyst)</li>
+                  <li>ID(chief analyst)</li>
+                  <li>ID(manager)</li>
+                </ul>
+              </td>
+              <td id="toCreate">
+                <ul class="list-unstyled">
+                  <li>ID(sampler)</li>
+                  <li>ID(analyst)</li>
+                  <li>ID(chief analyst)</li>
+                  <li>ID(manager)</li>
+                </ul>
+              </td>
+              <td id="quantityOfUsers">1</td>
+              <td id="idOfUsers"><a href="">U1</a></td>
+              <td id="lastAdded">01-01-2023: <a href="">U1</a></td>
+              <td id="lastChanged"></td>
+              <td id="reasonChanged"></td>
+            </tr>
+            <tr>
+              <th scope="row" id="manager">2</th>
+              <td id="role">Manager</td>
+              <td id="functions">
+                <ul class="list-unstyled">
+                  <li>1. Manage the chief analyst.</li>
+                  <li>2. Supervise the chief analyst.</li>
+                  <li>3. Search information by IDs.</li>
+                  <li>4. Watch and save information by IDs.</li>
+                  <li>5. Watch and save the results of research.</li>
+                  <li>6. Watch and save the reports based on the results.</li>
+                </ul>
+              </td>
+              <td id="toUse">
+                <ul class="list-unstyled">
+                  <li>ID(test plan)</li>
+                  <li>ID(monitoring point)</li>
+                  <li>ID(sample)</li>
+                  <li>ID(express-test)</li>
+                  <li>Result(express)</li>
+                  <li>ID(result)</li>
+                  <li>Result</li>
+                  <li>ID(sampler)</li>
+                  <li>ID(analyst)</li>
+                  <li>ID(chief analyst)</li>
+                  <li>Report</li>
+                  <li>ID(administrator)</li>
+                </ul>
+              </td>
+              <td id="toCreate">
+                <ul class="list-unstyled"></ul>
+              </td>
+              <td id="quantityOfUsers">2</td>
+              <td id="idOfUsers"><a href="">U2; </a><a href="">U3</a></td>
+              <td id="lastAdded">02-01-2023: <a href="">U3</a></td>
+              <td id="lastChanged">05-01-2023: U3</td>
+              <td id="reasonChanged">Changed Last Name</td>
+            </tr>
+            <tr>
+              <th scope="row" id="chief-analyst">3</th>
+              <td id="role">Chief analyst</td>
+              <td id="functions">
+                <ul class="list-unstyled">
+                  <li>1. Design monitoring plan.</li>
+                  <li>2. Determine the monitoring point.</li>
+                  <li>3. Add information about the monitoring point.</li>
+                  <li>4. Manage the samplers and analysts.</li>
+                  <li>5. Supervise the samplers and analysts.</li>
+                  <li>6. Search information by IDs.</li>
+                  <li>7. Watch information by IDs.</li>
+                  <li>8. Watch the results of research.</li>
+                  <li>9. Prepare the reports based on the results.</li>
+                </ul>
+              </td>
+              <td id="toUse">
+                <ul class="list-unstyled">
+                  <li>ID(sample)</li>
+                  <li>ID(express-test)</li>
+                  <li>Result(express)</li>
+                  <li>ID(result)</li>
+                  <li>Result</li>
+                  <li>ID(sampler)</li>
+                  <li>ID(analyst)</li>
+                  <li>ID(chief analyst)</li>
+                  <li>Report</li>
+                </ul>
+              </td>
+              <td id="toCreate">
+                <ul class="list-unstyled">
+                  <li>ID(test plan)</li>
+                  <li>ID(monitoring point)</li>
+                  <li>Report</li>
+                </ul>
+              </td>
+              <td id="quantityOfUsers">1</td>
+              <td id="idOfUsers"><a href="">U4</a></td>
+              <td id="lastAdded">02-01-2023: <a href="">U4</a></td>
+              <td id="lastChanged"></td>
+              <td id="reasonChanged"></td>
+            </tr>
+            <tr>
+              <th scope="row" id="analyst">4</th>
+              <td id="role">Analyst</td>
+              <td id="functions">
+                <ul class="list-unstyled">
+                  <li>
+                    1. Register samples for research - second registration.
+                  </li>
+                  <li>2. Prepare samples for research.</li>
+                  <li>3. Test samples.</li>
+                  <li>4. Register results of the research.</li>
+                </ul>
+              </td>
+              <td id="toUse">
+                <ul class="list-unstyled">
+                  <li>ID(test plan)</li>
+                  <li>ID(sample)</li>
+                  <li>ID(analyst)</li>
+                </ul>
+              </td>
+              <td id="toCreate">
+                <ul class="list-unstyled">
+                  <li>ID(result)</li>
+                  <li>Result</li>
+                </ul>
+              </td>
+              <td id="quantityOfUsers">3</td>
+              <td id="idOfUsers">
+                <a href="">U5; </a> <a href="">U6;</a> <a href="">U7</a>
+              </td>
+              <td id="lastAdded">05-01-2023: <a href="">U7</a></td>
+              <td id="lastChanged"></td>
+              <td id="reasonChanged"></td>
+            </tr>
+            <tr>
+              <th scope="row" id="sampler">5</th>
+              <td id="role">Sampler</td>
+              <td id="functions">
+                <ul class="list-unstyled">
+                  <li>1. Pick up samples.</li>
+                  <li>2. Register samples - first registration.</li>
+                  <li>3. Conduct express-tests./li></li>
+                  <li>4. Register the results of express-tests.</li>
+                  <li>5. Preserve samples.</li>
+                  <li>6. Transport samples.</li>
+                </ul>
+              </td>
+              <td id="toUse">
+                <ul class="list-unstyled">
+                  <li>ID(sampler)</li>
+                  <li>ID(monitoring point)</li>
+                  <li>ID(sampler)</li>
+                </ul>
+              </td>
+              <td id="toChange">
+                <ul class="list-unstyled">
+                  <li>ID(sample)</li>
+                  <li>ID(express-test)</li>
+                  <li>Result(express)</li>
+                </ul>
+              </td>
+              <td id="quantityOfUsers">2</td>
+              <td id="idOfUsers"><a href="">U8; </a> <a href="">U10</a></td>
+              <td id="lastAdded">02-01-2022: <a href="">U10</a></td>
+              <td id="lastChanged">02-01-2022: <a href="">U9</a></td>
+              <td id="reasonChanged">Deleted</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">To top</button>
+    <script src="src/script.js"></script>
+  </body>
+</html>

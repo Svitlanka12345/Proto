@@ -46,15 +46,22 @@
         <div class="card-body">
           <h5 class="card-title">Welcome back, User!</h5>
           <p class="card-text">
-            Last activity in your profile: HH-MM DD-MM-YYYY <a href="">Link</a>
+            Last activity in profile: HH-MM DD-MM-YYYY
+            <a href="">History of activity</a>
           </p>
           <div class="row">
             <div class="col-6">
-              <div class="card" style="width: 18rem">
+              <div class="card" style="width: 18rem; margin: 20px 40px">
                 <img
-                  src="images/user.jpg"
+                  src="images/user.bmp"
                   class="card-img-top"
                   alt="user's photo"
+                  style="
+                    width: 80%;
+                    display: block;
+                    margin: 0 auto;
+                    padding: 30px 0;
+                  "
                 />
                 <div class="card-body">
                   <h5 class="card-title">Your Profile</h5>
@@ -92,13 +99,19 @@
               <div>Choose the option you would like to find</div>
               <div class="input-group mb-3">
                 <select class="form-select" id="inputGroupSelect02">
-                  <option selected>Search...</option>
+                  <option selected>Choose the option...</option>
                   <option value="1">Sample</option>
                   <option value="2">Index</option>
                   <option value="3">Monitoring point</option>
-                  <option value="4">Documents</option>
-                  <option value="5">Results</option>
+                  <option value="4">Results</option>
+                  <option value="5">Reports</option>
+                  <option value="6">Users</option>
                 </select>
+                <input
+                  type="text"
+                  aria-label="First name"
+                  class="form-control"
+                />
                 <button
                   type="button"
                   class="btn btn-secondary"
